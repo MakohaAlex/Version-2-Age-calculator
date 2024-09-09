@@ -1,121 +1,13 @@
-/* Reset and Basic Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+body {
+    background-color: #f8f9fa;
 }
 
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+.card {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-.navigation ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation ul li {
-    margin: 0 10px;
-}
-
-.navigation ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: color 0.3s;
-}
-
-.navigation ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Social Icons */
-.social-icons ul {
-    list-style: none;
-    display: flex;
-    animation: scrollHorizontal 20s linear infinite;
-}
-
-.social-icons ul li {
-    margin-left: 15px;
-}
-
-.social-icons img {
-    width: 20px;
-    height: 20px;
-}
-
-/* Animations */
-@keyframes scrollHorizontal {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-@keyframes scrollVertical {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-100%); }
-}
-
-/* Hero Section */
-.hero-section {
-    background-image: url('images/hero.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-/* Text Popup */
-.text-popup {
-    animation: popup 0.5s ease-in-out;
-}
-
-@keyframes popup {
-    0% { opacity: 0; transform: scale(0.5); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-/* Parallax Scrolling */
-.parallax-image {
-    background-image: url('images/about.jpg');
-    height: 500px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+#ageDisplay {
+    font-weight: bold;
     text-align: center;
-}
-
-.footer-social-icons ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    animation: scrollVertical 20s linear infinite;
-}
-
-.footer-social-icons ul li {
-    margin: 0 10px;
-}
-
-.footer-social-icons img {
-    width: 20px;
-    height: 20px;
 }
